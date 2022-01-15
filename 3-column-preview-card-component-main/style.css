@@ -1,0 +1,139 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+main {
+	/*display: grid;
+	place-items: center;*/
+	width: 100%;
+	height: 100vh;
+	font-size: 15px;
+	font-family: /*url:('https://fonts.google.com/specimen/Lexend+Deca')*/
+		sans-serif;
+	background-color: hsl(0, 0%, 95%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/*.container {
+	background-color: red;
+	min-height: 70vh;
+	width: 60vw;
+	display: flex;
+}*/
+.content {
+	min-height: 80vh;
+	width: 60%;
+	display: flex;
+	border-radius: 1rem;
+	overflow: hidden;
+}
+.containers {
+	position: relative;
+	flex: 1;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+.container-1 {
+	background-color: hsl(31, 77%, 52%);
+	min-height: 80vh;
+	width: 60%;
+	overflow: hidden;
+}
+.container-2 {
+	background-color: hsl(184, 100%, 22%);
+	min-height: 80vh;
+	width: 60%;
+}
+.container-3 {
+	background-color: hsl(179, 100%, 13%);
+	min-height: 80vh;
+	width: 60%;
+	overflow: hidden;
+}
+.image {
+	padding: 40px 20px 0px 20px;
+}
+.title {
+	padding: 20px;
+	color: hsl(0, 0%, 95%);
+	font-weight: 700;
+}
+.text {
+	padding: 0px 20px 80px 20px;
+	color: hsla(0, 0%, 100%, 0.75);
+	font-size: 13px;
+	font-weight: 400;
+}
+.button {
+	padding: 10px 20px 10px 20px;
+	border-radius: 20px;
+	margin-left: 20px;
+	border: 1px solid hsl(0, 0%, 95%);
+	text-decoration: none;
+	font-size: 12px;
+}
+
+.btn1 {
+	color: hsl(31, 77%, 52%);
+	background-color: hsl(0, 0%, 95%);
+}
+.btn1:hover {
+	color: hsl(0, 0%, 95%);
+	background-color: hsl(31, 77%, 52%);
+}
+.btn2 {
+	color: hsl(184, 100%, 22%);
+	background-color: hsl(0, 0%, 95%);
+}
+.btn2:hover {
+	color: hsl(0, 0%, 95%);
+	background-color: hsl(184, 100%, 22%);
+}
+.btn3 {
+	color: hsl(179, 100%, 13%);
+	background-color: hsl(0, 0%, 95%);
+}
+.btn3:hover {
+	color: hsl(0, 0%, 95%);
+	background-color: hsl(179, 100%, 13%);
+}
+@media (max-width: 798px) {
+
+.content {
+	margin-top: 1000px;
+	height: 300%;
+}
+
+
+	.containers {
+		flex-direction: column;
+		display: flex;
+	}
+	.container-1,
+	.container-2,
+	.container-3 {
+		height: 0%;
+	}
+
+	.container-1 {
+		border-radius: 5px 5px 0 0;
+	}
+	.container-3 {
+		border-radius: 0 0 5px 5px;
+	}
+
+
+}
